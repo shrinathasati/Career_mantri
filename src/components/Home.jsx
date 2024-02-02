@@ -3,12 +3,15 @@ import { AiOutlineUser, AiOutlineVideoCameraAdd } from 'react-icons/ai';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { BiMessageAdd } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
-
+import Feedback from './Feedback';
 
 const Home = () => {
     const navigate = useNavigate();
     return (
-        <div className="flex h-[100vh]">
+        <>
+        <Feedback />
+        <div className="flex h-[100vh] mt-[4rem]">
+            
             <div className='w-[60%] px-[4rem] py-[6rem] bg-[#fafcfc]'>
                 <h1 className='text-5xl font-bold py-4'>Your Path to <br /> Correct Future Choice</h1>
                 <h1 className='text-xl'>What type of service you want?</h1>
@@ -61,7 +64,8 @@ const Home = () => {
 
             </div>
 
-        </div>
+            </div>
+        </>
     )
 }
 

@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
-
+import Feedback from "./components/Feedback";
+import Opportunity from "./components/Opportunity";
+import OpportunityList from "./components/OpportunityList";
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
       <Router>
           <Nav />
           <Routes>
-            <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/opportunity" element={<Opportunity />} />
+          <Route path="/opportunityList" element={<OpportunityList />} />
           </Routes>
 
       </Router>
