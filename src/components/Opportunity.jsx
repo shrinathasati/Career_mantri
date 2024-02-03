@@ -14,7 +14,7 @@ const OpportunityForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/', opportunity);
+            const response = await axios.post('http://localhost:5000/opportunity', opportunity);
             console.log(response.data);
             setOpportunity({
                 title: '',

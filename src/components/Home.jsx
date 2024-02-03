@@ -17,8 +17,17 @@ const Home = () => {
                 <h1 className='text-xl'>What type of service you want?</h1>
                 <div className='w-[100%]'>
                     <div className='grid p-2 rounded w-[100%]'>
-                        <div className='flex'>
-                            <div className='flex m-2  shadow-lg w-[14rem] p-4 cursor-pointer' onClick={() => navigate('/sidenav')}>
+                            <div className='flex'>
+                            <div className='flex m-2 shadow-lg w-[14rem] p-4'>
+                                <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
+                                <div>
+                                        <div className='px-2  font-semibold'> Know About<br /> You </div>
+
+                                    <div className='px-2 text-sm'>For Myself</div>
+                                </div>
+                                <div className='m-auto'><FaArrowRightLong /></div>
+                            </div>
+                            <div className='flex m-2  shadow-lg w-[14rem] p-4 cursor-pointer' onClick={() => navigate('/chatbot')}>
                                 <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><BiMessageAdd className='text-white' /></div>
                                 <div>
                                     <div className='px-2  font-semibold'> Chat with <br />  AI </div>
@@ -27,6 +36,9 @@ const Home = () => {
                                 </div>
                                 <div className='m-auto'><FaArrowRightLong /></div>
                             </div>
+                            
+                        </div>
+                        <div className='flex'>
                             <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer' onClick={() => navigate('/room/1')}>
                                 <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineVideoCameraAdd className='text-white' /></div>
                                 <div>
@@ -36,26 +48,16 @@ const Home = () => {
                                 </div>
                                 <div className='m-auto'><FaArrowRightLong /></div>
                             </div>
-                        </div>
-                        <div className='flex'>
                             <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer' onClick={() => navigate('/snap')}>
                                 <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
                                 <div>
-                                    <div className='px-2  font-semibold'> Upload Resume <br />  </div>
+                                    <div className='px-2  font-semibold'>Evaluate Progress <br />  </div>
 
                                     <div className='px-2 text-sm'>For Myself</div>
                                 </div>
                                 <div className='m-auto'><FaArrowRightLong /></div>
                             </div>
-                            <div className='flex m-2 shadow-lg w-[14rem] p-4'>
-                                <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
-                                <div>
-                                    <div className='px-2  font-semibold'> Individual <br /> Counselling </div>
-
-                                    <div className='px-2 text-sm'>For Myself</div>
-                                </div>
-                                <div className='m-auto'><FaArrowRightLong /></div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

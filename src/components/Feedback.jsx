@@ -43,7 +43,7 @@ const Feedback = () => {
                                     id="inputMobile"
                                 />
                                 <button
-                                    className="bg-green-500 border border-600 p-2  rounded  mt-4"
+                                    className="bg-[#243e36] text-white border border-600 p-2  rounded  mt-4"
                                     type="submit"
                                 >
                                     Submit

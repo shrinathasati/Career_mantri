@@ -4,6 +4,8 @@ import Nav from "./components/Nav";
 import Feedback from "./components/Feedback";
 import Opportunity from "./components/Opportunity";
 import OpportunityList from "./components/OpportunityList";
+import Chatbot from "./components/Chatbot";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/opportunity" element={<Opportunity />} />
           <Route path="/opportunityList" element={<OpportunityList />} />
+         
           </Routes>
 
       </Router>
