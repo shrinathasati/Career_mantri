@@ -12,7 +12,7 @@ const Feedback = () => {
                         <h2 className="text-lg mt-8 text-gray-500">
                             Avail Career Counselling from India's best <br /> Career Experts
                         </h2>
-                        
+
                         <div className="border border-green-500 rounded mt-7 p-4">
                             <h3 className="text-green-500 text-lg mb-4">
                                 Request a Callback
@@ -25,16 +25,22 @@ const Feedback = () => {
                                     aria-label="Full name"
                                 />
                                 <input
-                                        type="email"
-                                        placeholder="Email Address"
-                                        className="mt-4 p-1 outline-none  w-[100%] border border-blue-200 focus:border-blue-500"
-                                        id="inputEmail"
+                                    type="email"
+                                    placeholder="Email Address"
+                                    className="mt-4 p-1 outline-none  w-[100%] border border-blue-200 focus:border-blue-500"
+                                    id="inputEmail"
                                 />
                                 <input
                                     type="number"
                                     placeholder="Mobile Number"
                                     className="mt-4 p-1 outline-none  w-[100%] border border-blue-200 focus:border-blue-500"
                                     id="inputMobile"
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Interest in which domain"
+                                    className="mt-4 p-1 outline-none  w-[100%] border border-blue-200 focus:border-blue-500"
+                                    id="inputInterest"
                                 />
                                 <button
                                     className="bg-[#243e36] text-white border border-600 p-2  rounded  mt-4"

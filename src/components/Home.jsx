@@ -18,7 +18,7 @@ const Home = () => {
                 <div className='w-[100%]'>
                     <div className='grid p-2 rounded w-[100%]'>
                             <div className='flex'>
-                                <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer'>
+                                <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer' onClick={()=>navigate('/knowaboutyou')}>
                                 <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
                                 <div>
                                         <div className='px-2  font-semibold'> Know About<br /> You </div>
@@ -48,7 +48,7 @@ const Home = () => {
                                 </div>
                                 <div className='m-auto'><FaArrowRightLong /></div>
                             </div>
-                            <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer' onClick={() => navigate('/snap')}>
+                                <div className='flex m-2 shadow-lg w-[14rem] p-4 cursor-pointer' onClick={() => navigate('/testlinks')}>
                                 <div className='bg-[#243e36] mt-2 p-2 w-[2rem] h-[2rem] rounded-full '><AiOutlineUser className='text-white' /></div>
                                 <div>
                                     <div className='px-2  font-semibold'>Evaluate Progress <br />  </div>
