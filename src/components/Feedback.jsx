@@ -21,16 +21,10 @@ const Feedback = () => {
                                 <input
                                     type="text"
                                     className="mt-4 p-1 outline-none  w-[100%] border border-blue-200 focus:border-blue-500"
-                                    placeholder="First name"
-                                    aria-label="First name"
+                                    placeholder="Full name"
+                                    aria-label="Full name"
                                 />
                                 <input
-                                    type="text"
-                                    className="mt-4 p-1 outline-none  w-[100%] border border-blue-200 focus:border-blue-500"
-                                    placeholder="Last name"
-                                    aria-label="Last name"
-                                />
-                                    <input
                                         type="email"
                                         placeholder="Email Address"
                                         className="mt-4 p-1 outline-none  w-[100%] border border-blue-200 focus:border-blue-500"

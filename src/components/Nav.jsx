@@ -1,8 +1,14 @@
 import './Nav.css';
 import { RiArrowDropDownLine } from 'react-icons/ri';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Chat = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        navigate('/login');
+    }
     return (
         <div className="nav">
             <Link to="/" className=' px-[4rem] font-bold text-3xl my-auto'>CareerMantri</Link>
@@ -15,8 +21,12 @@ const Chat = () => {
             </ul>
 
             <div className="ml-auto my-auto pr-[6rem]">
-                <a href='#' className='px-4 '>Login</a>
-                <button className='px-4 w-auto py-2 w-[100px] text-black rounded-full bg-[#fff2de]'>Book Now</button>
+                {!localStorage.getItem('token') ? (<>
+                    <Link className={`link ${location.pathname === '/login' ? "active" : ""}`} to='/login'>Login</Link>
+                    <Link className={`link ${location.pathname === '/signup' ? "active" : ""}`} to='/signup'>Signup</Link>
+                </>)
+                    :
+                    (<h5 className="nav_logout" onClick={handleLogout}>Logout</h5>)}
             </div>
 
         </div>

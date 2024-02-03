@@ -17,7 +17,8 @@ function App() {
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/opportunity" element={<Opportunity />} />
           <Route path="/opportunityList" element={<OpportunityList />} />
-         
+          <Route path="/chatbot" element={<Chatbot />} />
+
           </Routes>
 
       </Router>
