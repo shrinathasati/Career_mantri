@@ -53,7 +53,7 @@ export const Signuppage = () => {
                     <h4>Password</h4>
                     <input type='password' name='password' onChange={handleChange} required />
                 </div>
-                <button disabled={user.name.length<4 || user.password.length<5}>Submit</button>
+                <button disabled={user.name.length<1 || user.password.length<1}>Submit</button>
             </form>
         </div>
 

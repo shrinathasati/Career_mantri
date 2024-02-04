@@ -47,7 +47,7 @@ const Login = () => {
                     <h4>Password</h4>
                     <input type='password' name='password' onChange={handleChange} required />
                 </div>
-                <button disabled={ user.password.length < 5} >Submit</button>
+                <button disabled={ user.password.length < 1} >Submit</button>
             </form>
         </div>
 
