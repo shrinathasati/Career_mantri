@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 from ast import literal_eval
 from pymongo import MongoClient
 from flask_cors import CORS
-import openai
+
 import json
 # from gemini.api import GeminiAPI
 import google.generativeai as genai
@@ -77,28 +77,6 @@ def create_opportunity():
     print(data)
     return data, 200
 
-#  chat bot 
-
-# @app.route("/chat", methods=["GET", "POST"])
-# def CustomChatGPT():
-#     openai.api_key = "API key"
-                     
-
-#     messages = [{"role": "system", "content": "You are a financial experts that specializes in real estate investment and negotiation"}]
-
-#     user_input=request.data
-#     user_input=literal_eval(user_input.decode('utf-8'))
-#     user_input=user_input["user_input"]
-#     print(request.data)
-#     messages.append({"role": "user", "content": user_input})
-#     response = openai.ChatCompletion.create(
-#         model = "gpt-3.5-turbo",
-#         messages = messages
-#     )
-#     ChatGPT_reply = response["choices"][0]["message"]["content"]
-#     messages.append({"role": "assistant", "content": ChatGPT_reply})
-#     print(ChatGPT_reply)
-#     return jsonify({"response":ChatGPT_reply})
 
 
 
@@ -156,14 +134,8 @@ def CustomChatGPT():
                 response_message = f"The person knows languages such as {current_user_details['languages']}."
             # Add more conditions for other personal questions as needed
             else:
-                # If the user's input is not a personal question, pass it to GPT-3 for response
-                # response = openai.ChatCompletion.create(
-                #     model="gpt-3.5-turbo",
-                #     messages=[{"role": "user", "content": user_input}]
-                # )
-                # response_message = response["choices"][0]["message"]["content"]
+                
                 response = get_gemini_response(user_input)
-                # response_message.resolve()
 
     # Access the final accumulated attributes of the response
                 # response_message = response_message.messages[-1].content.text
@@ -182,51 +154,6 @@ def CustomChatGPT():
 
 
 
-# @app.route("/chat", methods=["POST"])
-# def CustomChatGPT():
-#     if 'user_email' not in current_user_details:
-#         return jsonify({"response": "Please log in first."}), 401
-    
-#     user_email = current_user_details['user_email']
-#     user_name = current_user_details['user_name']
-    
-#     # Fetch user details from the db.info collection
-#     user_info = db.info.find_one({'email': user_email})
-    
-#     if not user_info:
-#         return jsonify({"response": "User details not found."}), 404
-    
-#     # Retrieve user input from the request
-#     user_input = request.json.get("user_input", "")
-
-#     if user_input.lower() == user_name.lower():
-#         response_message = f"Hi {user_name}, how can I assist you today?"
-#     else:
-#         # Handle personal questions
-#         if "name" in user_input.lower():
-#             response_message = f"Your name is {user_info['name']}."
-#         elif "skills" in user_input.lower():
-#             response_message = f"Your skills include {user_info['skills']}."
-#         elif "education" in user_input.lower():
-#             response_message = f"Your education is from {user_info['education']}."
-#         elif "experience" in user_input.lower():
-#             response_message = f"Your experience includes {user_info['experience']}."
-#         elif "certification" in user_input.lower():
-#             response_message = f"You are certified by {user_info['certifications']}."
-#         elif "projects" in user_input.lower():
-#             response_message = f"You have done {user_info['projects']} projects."
-#         elif "languages" in user_input.lower():
-#             response_message = f"You know languages such as {user_info['languages']}."
-#         else:
-#             # If the user's input is not a personal question, pass it to GPT-3 for response
-#             response = openai.ChatCompletion.create(
-#                 model="gpt-3.5-turbo",
-#                 messages=[{"role": "user", "content": user_input}]
-#             )
-#             response_message = response["choices"][0]["message"]["content"]
-
-#     # Return the response
-#     return jsonify({"response": response_message})
 
 # callback 
 @app.route('/callback', methods=['POST'])
