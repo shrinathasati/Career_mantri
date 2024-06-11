@@ -81,7 +81,7 @@ def create_opportunity():
 
 # @app.route("/chat", methods=["GET", "POST"])
 # def CustomChatGPT():
-#     openai.api_key = "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"
+#     openai.api_key = "API key"
                      
 
 #     messages = [{"role": "system", "content": "You are a financial experts that specializes in real estate investment and negotiation"}]
