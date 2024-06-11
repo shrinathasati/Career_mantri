@@ -12,6 +12,7 @@ import ResumeForm from "./components/KnowMore/ResumeForm";
 import TestLinks from "./components/Progress/TestLinks";
 import MentorForm from "./components/Application";
 import Room from "./components/Room";
+import FeedbackComponent from "./components/userfeedback"
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
 
           <Route path="/opportunity" element={<Opportunity />} />
           <Route path="/opportunityList" element={<OpportunityList />} />
+          <Route path="/feed" element={<FeedbackComponent />} />
+
 
           <Route path="/knowaboutyou" element={<KnowAboutYou />} />
           <Route path="/chatbot" element={<Chatbot />} />

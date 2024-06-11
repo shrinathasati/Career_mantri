@@ -6,7 +6,7 @@ const Chat = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const handleLogout = () => {
-        localStorage.removeItem('token');
+        localStorage.removeItem('email');
         navigate('/login');
     }
     return (
@@ -16,13 +16,14 @@ const Chat = () => {
             <ul className='pl-8 flex justify-between w-[35%] my-auto'>
                 <li className='flex cursor-pointer'>Services <RiArrowDropDownLine className='m-auto text-3xl ' /></li>
                 <Link to='/opportunityList' className='flex cursor-pointer'>Opportunity</Link>
+                <Link to='/feed' className='flex cursor-pointer'>Feedback</Link>
                 <Link to='/application' className='flex cursor-pointer'>Application</Link>
                 <li className='flex cursor-pointer'>About</li>
                 <li className='flex cursor-pointer'>Contact</li>
             </ul>
 
             <div className="ml-auto my-auto pr-[6rem]">
-                {!localStorage.getItem('token') ? (<>
+                {!localStorage.getItem('email') ? (<>
                     <Link className={`link ${location.pathname === '/login' ? "active" : ""}`} to='/login'>Login</Link>
                     <Link className={`link ${location.pathname === '/signup' ? "active" : ""}`} to='/signup'>Signup</Link>
                 </>)
