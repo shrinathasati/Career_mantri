@@ -10,7 +10,7 @@ export const Signuppage = () => {
     let navigate = useNavigate();
     //call for api sigup
     const Signup = async (name, email, password) => {
-        const response = await axios.post('http://127.0.0.1:5000/signup', {
+        const response = await axios.post('https://career-mantri-ai-based-app-backend.vercel.app/signup', {
             user:JSON.stringify({ name, email, password })
         });
        

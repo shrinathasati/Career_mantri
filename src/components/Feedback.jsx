@@ -24,7 +24,7 @@ const Feedback = () => {
 
         if (termsChecked) {
             try {
-                const response = await axios.post("http://127.0.0.1:5000/callback", formData);
+                const response = await axios.post("https://career-mantri-ai-based-app-backend.vercel.app/callback", formData);
                 console.log(response.data);
                 setFormData({
                     fullName: "",

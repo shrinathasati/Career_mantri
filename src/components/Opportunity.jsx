@@ -95,7 +95,7 @@ const OpportunityForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/opportunity', opportunity);
+            const response = await axios.post('https://career-mantri-ai-based-app-backend.vercel.app/opportunity', opportunity);
             console.log(response.data);
             setOpportunity({
                 title: '',
