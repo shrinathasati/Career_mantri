@@ -16,7 +16,7 @@ const  Chatbot=()=> {
         setUserInput('');
 
         // Send the user's message to the server (backend)
-        const response = await axios.post('https://career-mantri-ai-based-app-backend.vercel.app/chat', {
+        const response = await axios.post('https://career-mantri1.onrender.com/chat', {
             user_input: userInput,
         });
 

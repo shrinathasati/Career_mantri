@@ -24,7 +24,7 @@ const Feedback = () => {
 
         if (termsChecked) {
             try {
-                const response = await axios.post("https://career-mantri-ai-based-app-backend.vercel.app/callback", formData);
+                const response = await axios.post("https://career-mantri1.onrender.com/callback", formData);
                 console.log(response.data);
                 setFormData({
                     fullName: "",

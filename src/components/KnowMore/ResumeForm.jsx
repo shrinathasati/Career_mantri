@@ -30,7 +30,7 @@ const ResumeForm = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://career-mantri-ai-based-app-backend.vercel.app/submit_resume', formData);
+            const response = await axios.post('https://career-mantri1.onrender.com/submit_resume', formData);
             console.log(response.data);
             // Handle success, redirect, or show a success message
             

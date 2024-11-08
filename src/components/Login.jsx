@@ -9,7 +9,7 @@ const Login = () => {
     let navigate = useNavigate();
     const LoginUser = async () => {
 
-        const response =await axios.post('https://career-mantri-ai-based-app-backend.vercel.app/login', {
+        const response =await axios.post('https://career-mantri1.onrender.com/login', {
             user: user,
         });
         

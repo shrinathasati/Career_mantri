@@ -17,7 +17,7 @@ const FileUploadComponent = ({ onFileUpload }) => {
             const formData = new FormData();
             formData.append('resume', file);
             setPopupOpen(true);
-            const response = await axios.post('http://127.0.0.1:80/upload_resume', formData);
+            const response = await axios.post('https://career-mantri1.onrender.com/upload_resume', formData);
 
             console.log(response.data);
 

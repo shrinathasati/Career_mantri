@@ -53,7 +53,7 @@ const OpportunityList = () => {
 
     useEffect(() => {
         // Fetch opportunities when the component mounts
-        axios.get('https://career-mantri-ai-based-app-backend.vercel.app/opportunity')
+        axios.get('https://career-mantri1.onrender.com/opportunity')
             .then(response => {
                 setOpportunities(response.data);
             })
