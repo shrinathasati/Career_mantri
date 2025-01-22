@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Problem Statement 2 :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AI Chat-based Career Counseling Application
 
-## Available Scripts
+Career mantri is an AI based chatbot with many unique features such as one to one mentoring session with mentors, Resume Scanner, Opportunity Notifications related to interested domain and Counseller application Dashboard.
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+In the dynamic landscape of education, students in secondary and higher secondary levels often face challenges in making informed career choices. Traditional career counseling methods may not always be readily accessible or personalized. The challenge is to develop an AI Chat-based application that serves as an interactive and intelligent platform for guiding students through their career exploration and decision-making process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Problem we have solved 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Limited Access to Personalized Counseling:** Many students lack access to personalized career counseling due to constraints like limited availability of counselors and resources.
 
-### `npm test`
+- **Complexity of Career Choices:** The modern job market is diverse and dynamic, making it challenging for students to navigate and understand the plethora of career options available to them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Inadequate Information:** Students may not have sufficient information about various career paths, educational requirements, and industry trends, hindering their ability to make informed decisions.
 
-### `npm run build`
+## Objective
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The primary goal of this challenge is to design and implement an AI Chat-based application that can provide personalized and insightful career counseling to secondary and higher secondary students. The application should aim to empower students with the knowledge and guidance needed to make informed decisions about their educational and career paths.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Functional Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **User-friendly Interface:**
+   - Design an intuitive and user-friendly chat interface that appeals to students.
 
-### `npm run eject`
+2. **Personalized Career Guidance:**
+   - Implement AI algorithms to analyze individual student profiles and provide tailored career recommendations based on their interests, skills, and aspirations.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Comprehensive Information:**
+   - Integrate a vast database of information on various careers, educational pathways, and industry trends to offer comprehensive insights.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Educational Pathways:**
+   - Provide guidance on suitable educational pathways, including college courses, certifications, and vocational training.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Skill Development Recommendations:**
+   - Suggest skill development opportunities and resources to help students prepare for their chosen career paths with the help of email and sms related to their interest in a particular domain.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. **Progress Tracking:**
+   - Implement features to track students' progress, allowing for continuous guidance and adjustments as they explore and develop their career goals.
+  
+## Unique Features:
+1. **Opportunity Notifications**
+   - provide email and sms alert to the students for different opportunities related to their domain
+     
+2. **Resume Scan**
+   - We have build our own resume scan model to fetch and extract user information
 
-## Learn More
+3. **Counseller application Dashboard**
+4. **In-Person Counselling**
+5. **Test Your Skills**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Frontend:**
+  - React.js, CSS ,JavaScript.
 
-### Code Splitting
+- **Backend:**
+  - Flask (Python).
+  - Email kit
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Database**
+  - MongoDB
 
-### Analyzing the Bundle Size
+- **Chatbot Integration:**
+  - Dialogflow, Bot Framework.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Run
 
-### Making a Progressive Web App
+1. Install the necessary dependencies.
+2. Run the Flask backend.
+3. Run the React frontend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Architecture
+![Screenshot (159)](https://github.com/DhananjayDogne/nit_b_chatbot_2/assets/120880974/968187f5-fb30-403c-a76d-3ff8a9859172)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
